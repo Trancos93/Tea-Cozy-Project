@@ -1,0 +1,165 @@
+html body {
+    font-family: helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 30px;
+    opacity: 0.9;
+}
+
+/*Header's stlyling*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    max-width: 1300px;              /*determines the maximum width of the header*/
+    margin: auto;                   /*gives the auto property to the margin so that it adjusts automatically*/
+}
+
+header nav li {
+    list-style: none;
+    display: inline;
+    text-decoration: underline;
+}
+
+.tea_cozy_logo {
+    height: 50px;
+}
+
+/*First section's styling*/
+
+section.section1 {
+    display: flex;              /*gives the section the flexbox property*/
+    justify-content: center;    /*centers the content in the main axis*/
+    align-items: center;        /*centers the content in the Y axis*/               
+    height: auto;               /*height is auto, so it doesnt cover the header section*/
+    position: relative;         /* we give the parent element the position:relative property, so that the child can move relative to its parent, ignoring the rest of the document*/
+}
+
+section div.heading1 {
+    text-align: center;        /*allows the text inside the div to position in the middle*/
+    position: absolute;        /*we give the child the absolute property, so that it positions at the center of the parent.*/ 
+    background-color: black; /*determines the divs background color*/
+    width: 100%;               /*determines de width of the div*/ 
+}
+
+section.section1 img {
+    width: 100%;               /*gives the image inside the section 100% of its width, its responsive, because screen size doesnt matter*/ 
+    max-width: 1200px;
+    max-height: 700px;
+}           
+
+
+/*section 2 styling*/
+
+section.section2 {
+    display: flex;              /*turns section into a flex container, enabling flex layout for its childen*/
+    justify-content: center;    /*horizontally centers the child elements within the section*/
+    align-items: center;        /*vertically aligns items withing this section*/
+    flex-direction: column;     /*stacks the child elements in a vertical column*/
+    padding: 20px;
+}
+
+div.heading2 {
+    display: flex;              /*turns section into a flex container, enabling flex layout for its childen*/
+    justify-content: center;
+    flex-direction: column;     /*vertically aligns items withing this section*/
+    line-height: 0.1;           /*modifies space between lines so that they stay closer from each other*/
+    align-items: center;        /*centers both sentences*/
+    margin-bottom: 20px;
+    
+}
+
+div.flex_container {            
+    display: flex;              
+    flex-wrap: wrap;             /*allows the child items to wrap onto new rows if there isn't enough horizontal space*/
+    justify-content: center;
+    align-items: center;
+    gap: 20px;                    /*adds 20px of spacing between each child, both horizontally and vertically*/
+    max-width: 1000px;            /*determines the maximum width of the container*/  
+    margin: 0 auto;
+}
+
+.flex_container div { 
+    max-width: 300px;               /*limits the width of each child block to 300px*/
+    text-align: center;             /*centers the text inside the block*/
+    justify-content: center;           
+}
+
+.flex_container img {
+    width: 100%;                    /*ensures the image fills the width of its parents container*/
+    height: auto;                   /*maintains the image's aspect ratioon, preventing distortion*/
+}
+
+/*Third section styling*/
+
+section.section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+div.square_container {                                      /*this targets the container of the 3 squares*/
+    display: flex;                                          /*gives them the flex property*/
+    justify-content: space-around;                          /*gives them the space around property, so that they are spaced from each other*/
+    align-items: center;                                    /*aligns the 3 at the center of the container*/
+    flex-direction: row;                
+    height: 500px;                                          /* determines the height and width of the container*/
+    width: 1200px;
+    gap: 30px;                                              /*determines the gap that theres gonna be between the squares*/
+    background-image: url("./img-locations-background.jpg");/*sets up the background image*/
+}
+
+.square_container div {                                      /*this selector, targets every div, inside that class*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 10px;
+    background-color: black;
+    min-width: 300px;
+} 
+
+.overlay h2 {
+
+}
+
+/*last section styling */
+
+section.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+}
+
+/* Footer styling*/
+
+footer {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    max-height: 69px;
+}
+
+
+
+
